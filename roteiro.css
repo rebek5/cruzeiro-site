@@ -1,0 +1,412 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    color: #333333;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   MODAL DO ROTEIRO
+========================================================= */
+
+.modal-roteiro {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 30px 40px 50px;
+}
+
+
+/* =========================================================
+   CABEÇALHO DO MODAL
+========================================================= */
+
+.cabecalho-roteiro {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.cabecalho-roteiro h1 {
+    color: #071b49;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* BOTÃO FECHAR */
+
+.botao-fechar {
+    width: 52px;
+    height: 52px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 0.2s ease;
+}
+
+.botao-fechar:hover {
+    background: #2864e8;
+}
+
+
+/* =========================================================
+   CORPO DO MODAL - DUAS COLUNAS
+========================================================= */
+
+.corpo-roteiro {
+    display: flex;
+
+    gap: 45px;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   COLUNA ESQUERDA
+========================================================= */
+
+.coluna-mapa {
+    flex: 0 0 42%;
+}
+
+.imagem-mapa img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   RESUMO DO ITINERÁRIO
+========================================================= */
+
+.resumo-roteiro {
+    margin-top: 25px;
+}
+
+.resumo-destino {
+    margin-bottom: 25px;
+
+    color: #333333;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.resumo-destino strong {
+    color: #071b49;
+
+    font-weight: 700;
+}
+
+.linha-resumo {
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #071b49;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.linha-resumo i {
+    font-size: 18px;
+
+    color: #071b49;
+}
+
+
+/* =========================================================
+   COLUNA DIREITA - TABELA
+========================================================= */
+
+.coluna-itinerario {
+    flex: 1;
+
+    min-width: 0;
+
+    border-left: 1px solid #e2e2e2;
+
+    padding-left: 35px;
+}
+
+
+/* =========================================================
+   LINHA DA TABELA
+========================================================= */
+
+.linha-tabela {
+    display: flex;
+
+    align-items: center;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+/* CABEÇALHO DA TABELA */
+
+.linha-cabecalho {
+    padding: 0 0 14px;
+
+    border-bottom: 1px solid #071b49;
+
+    color: #071b49;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   COLUNAS
+========================================================= */
+
+.col-dia {
+    flex: 0 0 55px;
+}
+
+.col-data {
+    flex: 0 0 130px;
+}
+
+.col-porto {
+    flex: 1;
+}
+
+.col-chegada {
+    flex: 0 0 90px;
+
+    text-align: right;
+}
+
+.col-saida {
+    flex: 0 0 90px;
+
+    text-align: right;
+}
+
+
+/* NÚMERO DO DIA (quadradinho azul) */
+
+.numero-dia {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 5px;
+
+    background: #071b49;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* DATA */
+
+.col-data strong {
+    display: block;
+
+    color: #071b49;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.col-data em {
+    color: #8d8d8d;
+
+    font-size: 13px;
+    font-style: normal;
+}
+
+
+/* PORTO */
+
+.col-porto a {
+    color: #2864e8;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    text-decoration: underline;
+}
+
+.col-porto a:hover {
+    color: #174dbb;
+}
+
+.porto-navegacao {
+    color: #8d8d8d;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* HORÁRIOS */
+
+.col-chegada,
+.col-saida {
+    color: #071b49;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   OBSERVAÇÃO (tender boats)
+========================================================= */
+
+.linha-observacao {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 0 12px 55px;
+
+    border-bottom: 1px solid #e2e2e2;
+
+    color: #666666;
+
+    font-size: 14px;
+}
+
+.linha-observacao i {
+    color: #071b49;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .modal-roteiro {
+        padding: 20px;
+    }
+
+    .corpo-roteiro {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .coluna-mapa {
+        flex: 1 1 auto;
+
+        width: 100%;
+    }
+
+    .coluna-itinerario {
+        width: 100%;
+
+        border-left: none;
+
+        padding-left: 0;
+    }
+
+    .cabecalho-roteiro h1 {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVO - CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .linha-tabela {
+        flex-wrap: wrap;
+
+        gap: 6px;
+    }
+
+    .col-dia {
+        flex: 0 0 40px;
+    }
+
+    .col-data {
+        flex: 1 1 auto;
+    }
+
+    .col-porto {
+        flex: 1 1 100%;
+
+        padding-left: 40px;
+    }
+
+    .col-chegada,
+    .col-saida {
+        flex: 1;
+
+        text-align: left;
+    }
+
+    .linha-observacao {
+        padding-left: 40px;
+    }
+}

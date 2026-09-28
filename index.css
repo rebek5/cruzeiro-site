@@ -1,0 +1,1082 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+/* Remove margens e espaçamentos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Impede que o site crie rolagem horizontal */
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Configurações gerais da página */
+body {
+    width: 100%;
+
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    color: #c8cfde;
+
+    background: #050505;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+.cabecalho {
+    width: 100%;
+
+    /*
+       Altura total do cabeçalho:
+       65px = primeira linha
+       65px = menu
+    */
+    background: #000000;
+
+    border-bottom: 2px solid #9500ff;
+}
+
+
+/* =========================================================
+   PRIMEIRA LINHA DO CABEÇALHO
+========================================================= */
+
+.cabecalho-superior {
+
+    /*
+       Altura da primeira linha.
+
+       Não coloque 40px porque o botão Login
+       tem 55px de altura.
+    */
+    height: 65px;
+
+    display: flex;
+
+    /*
+       Centraliza verticalmente:
+       logo, localização e demais elementos.
+    */
+    align-items: center;
+
+    /*
+       Espaço das laterais.
+    */
+    padding: 0 30px;
+
+    /*
+       Espaçamento entre os elementos.
+    */
+    gap: 25px;
+
+    /*
+       Necessário para podermos posicionar
+       a pesquisa e o Login corretamente.
+    */
+    position: relative;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-site {
+
+    /*
+       Espaço reservado para o logo.
+    */
+    width: 200px;
+
+    margin-left: -40px;
+
+    transform: translateY(10px);
+    
+
+    /*
+       Impede que o logo seja empurrado
+       pelos outros elementos.
+    */
+    flex-shrink: 0;
+}
+
+.logo-site img {
+
+    /*
+       Tamanho visual do logo.
+    */
+    width: 200px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   LOCALIZAÇÃO / CEP
+========================================================= */
+
+.localizacao-site {
+
+    /*
+       Largura da área de localização.
+    */
+    width: 210px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transform: translate(80px, 10px);
+
+    /*
+       Centraliza o conteúdo verticalmente.
+    */
+    justify-content: center;
+
+    /*
+       Pequeno espaço entre:
+       "Ativar localização"
+       e
+       "CEP"
+    */
+    gap: 3px;
+
+    /*
+       Impede que essa área seja esmagada.
+    */
+    flex-shrink: 0;
+}
+
+
+/* Texto "Ativar localização" */
+
+.localizacao-site strong {
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* Linha do CEP */
+
+.cep-localizacao {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #2864e8;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/* Ícone de localização */
+
+.cep-localizacao i {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   CAMPO DE PESQUISA
+========================================================= */
+
+.pesquisa-site {
+
+    /*
+       Coloca a pesquisa no centro do cabeçalho.
+    */
+    position: absolute;
+
+    left: 50%;
+
+    /*
+       Faz o centro da pesquisa coincidir
+       com o centro da tela.
+    */
+    transform: translate(-50%, 10px);
+
+    width: 350px;
+
+    height: 35px;
+
+    border-radius: 6px;
+
+    background: #e4e4e4;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    gap: 25px;
+}
+
+
+/* Ícone da pesquisa */
+
+.pesquisa-site i {
+    color: #130067;
+
+    font-size: 20px;
+}
+
+
+/* Campo onde o usuário escreve */
+
+.pesquisa-site input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    color: #071b49;
+}
+
+
+/* Cor do texto "Pesquisar" */
+
+.pesquisa-site input::placeholder {
+    color: #555555;
+}
+
+
+/* =========================================================
+   BOTÃO LOGIN
+========================================================= */
+
+.botao-login {
+
+    /*
+       Mantém o Login sempre no lado direito.
+    */
+    position: absolute;
+
+    right: 130px;
+
+    /*
+       Centraliza verticalmente na primeira linha.
+    */
+    top: 50%;
+
+    transform: translateY(-20%);
+
+    width: 150px;
+
+    height: 40px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2864e8;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    /*
+       IMPORTANTE:
+       retiramos o antigo margin-left: 90px.
+    */
+    margin-left: 0;
+}
+
+
+/* Ícone do Login */
+
+.botao-login i {
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   MENU PRINCIPAL
+========================================================= */
+
+.menu-principal {
+
+    /*
+       Segunda linha do cabeçalho.
+    */
+    position: relative;
+
+
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    /*
+       O 12px no topo deixa as palavras
+       um pouco mais para baixo.
+    */
+    padding: 12px 40px 0;
+}
+
+.menu-principal::before {
+    content: "";
+
+    position: absolute;
+
+    top: 15px; /* aumenta este valor para descer a linha */
+
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background: #c026ff;
+}
+
+
+/* Links:
+   Passagens
+   Pacotes
+   Descontos
+   Eventos
+   Parcerias
+*/
+
+.menu-principal a {
+
+    color: #f5f6f8;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+    
+}
+
+
+/* Setinhas do menu */
+
+.menu-principal a i {
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+/* Quando passa o mouse */
+
+.menu-principal a:hover {
+
+    color: #2864e8;
+}
+
+
+/* Faz a seta girar */
+
+.menu-principal a:hover i {
+
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   BANNER PRINCIPAL
+========================================================= */
+
+.banner-principal {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 400px;
+
+    overflow: visible;
+
+    background: #0b2748;
+}
+
+
+/* =========================================================
+   VÍDEO DO BANNER
+========================================================= */
+
+.video-banner {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   CAMADA ESCURA SOBRE O VÍDEO
+========================================================= */
+
+.banner-principal::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 20, 50, 0.20);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TEXTO DO BANNER
+========================================================= */
+
+.conteudo-banner {
+
+    position: absolute;
+
+    z-index: 2;
+
+    left: 8%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #ffffff;
+
+    max-width: 600px;
+}
+
+
+.conteudo-banner h1 {
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.conteudo-banner p {
+
+    font-size: 22px;
+
+    margin-bottom: 30px;
+    
+}
+
+
+/* =========================================================
+   BOTÃO DO BANNER
+========================================================= */
+
+.botao-banner {
+
+    display: inline-block;
+
+    background: #2864e8;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 16px 28px;
+
+    border-radius: 6px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+.badge-show {
+    display: inline-block;
+    padding: 9px 20px;
+    margin-bottom: 18px;
+
+    border: 2px solid #c026ff;
+    border-radius: 30px;
+
+    background: rgba(20, 5, 35, 0.75);
+    color: #d946ef;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 0 15px rgba(192, 38, 255, 0.35);
+}
+
+.botao-banner:hover {
+
+    background: #0053f8;
+}
+
+
+/* =========================================================
+   BARRA DE BUSCA DE CRUZEIROS
+========================================================= */
+
+.barra-busca-cruzeiro {
+
+    position: absolute;
+
+    z-index: 5;
+
+    /*
+       Faz a barra ficar parcialmente
+       sobre o final do vídeo.
+    */
+    bottom: -55px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 30px);
+
+    max-width: 1180px;
+
+    min-height: 82px;
+
+    padding: 10px 12px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: stretch;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   CADA CAMPO DA BARRA DE CRUZEIRO
+========================================================= */
+
+.campo-busca {
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5px 10px;
+
+    background: #ffffff;
+
+    border-right: 1px solid #e5e5e5;
+}
+
+
+/* =========================================================
+   ÍCONE DOS CAMPOS
+========================================================= */
+
+.icone-campo {
+
+    width: 30px;
+
+    min-width: 30px;
+
+    margin-right: 7px;
+
+    color: #2000c2;
+
+    font-size: 18px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DO CAMPO
+========================================================= */
+
+.informacoes-campo {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   TÍTULO DO CAMPO
+========================================================= */
+
+.informacoes-campo label {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #000000;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.informacoes-campo select {
+
+    width: 100%;
+
+    padding: 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #050505;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   BOTÃO BUSCAR
+========================================================= */
+
+.botao-buscar-cruzeiro {
+
+    flex: 0 0 82px;
+
+    margin-left: 8px;
+
+    border: none;
+
+    background: #2864e8;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+
+    
+}
+
+
+
+/* =========================================================
+   RESPONSIVO - ATÉ 1400px
+========================================================= */
+
+@media (max-width: 1400px) {
+
+    .cabecalho-superior {
+
+        padding: 0 20px;
+
+        gap: 15px;
+    }
+
+
+    .menu-principal a {
+
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVO - ATÉ 1000px
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    /*
+       Aqui o cabeçalho deixa de ser uma linha única
+       para conseguir caber em telas menores.
+    */
+
+    .cabecalho-superior {
+
+        height: auto;
+
+        min-height: 65px;
+
+        padding: 10px 20px;
+
+        flex-wrap: wrap;
+        
+    }
+
+
+    .logo-site {
+
+        width: auto;
+    }
+
+
+    .localizacao-site {
+
+        width: auto;
+    }
+
+
+    /*
+       A pesquisa passa para uma linha própria.
+    */
+
+    .pesquisa-site {
+
+        position: relative;
+
+        left: auto;
+
+        transform: none;
+
+        order: 5;
+
+        width: 100%;
+    }
+
+
+    /*
+       O menu pode ser rolado horizontalmente.
+    */
+
+    .menu-principal {
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        gap: 30px;
+    }
+
+
+    .menu-principal a {
+
+        font-size: 15px;
+    }
+
+
+    /* BANNER */
+
+    .banner-principal {
+
+        height: 450px;
+    }
+
+
+    /* BARRA DE BUSCA */
+
+    .barra-busca-cruzeiro {
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+
+        padding: 12px;
+    }
+
+
+    .campo-busca {
+
+        flex: 1 1 30%;
+
+        min-height: 55px;
+
+        border: 1px solid #eeeeee;
+    }
+
+
+    .botao-buscar-cruzeiro {
+
+        flex: 1 1 100%;
+
+        height: 48px;
+
+        margin-left: 0;
+        
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVO - ATÉ 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* =====================================================
+       CABEÇALHO NO CELULAR
+    ====================================================== */
+
+    .cabecalho-superior {
+
+        padding: 15px;
+
+        min-height: 65px;
+    }
+
+
+    /*
+       Esconde localização no celular
+       para economizar espaço.
+    */
+
+    .localizacao-site {
+
+        display: none;
+    }
+
+
+    /*
+       Esconde a palavra Login,
+       deixando somente o ícone.
+    */
+
+    .botao-login span {
+
+        display: none;
+    }
+
+
+    .botao-login {
+
+        position: absolute;
+
+        right: 15px;
+
+        width: 55px;
+
+        height: 55px;
+
+        padding: 0;
+
+        justify-content: center;
+
+        margin-left: 0;
+    }
+
+
+    /* =====================================================
+       PESQUISA NO CELULAR
+    ====================================================== */
+
+    .pesquisa-site {
+
+        height: 40px;
+
+        padding: 0 20px;
+    }
+
+
+    .pesquisa-site input {
+
+        font-size: 17px;
+    }
+
+
+    /* =====================================================
+       MENU NO CELULAR
+    ====================================================== */
+
+    .menu-principal {
+
+        height: 60px;
+
+        padding: 0 15px;
+
+        gap: 30px;
+    }
+
+
+    /* =====================================================
+       BANNER
+    ====================================================== */
+
+    .banner-principal {
+
+        height: 400px;
+    }
+
+
+    /* =====================================================
+       TEXTO DO BANNER
+    ====================================================== */
+
+    .conteudo-banner {
+
+        left: 6%;
+
+        right: 6%;
+    }
+
+
+    .conteudo-banner h1 {
+
+        font-size: 32px;
+    }
+
+
+    .conteudo-banner p {
+
+        font-size: 17px;
+    }
+
+
+    .botao-banner {
+
+        padding: 13px 20px;
+
+        font-size: 15px;
+    }
+
+
+      /* =====================================================
+       BARRA DE BUSCA NO CELULAR
+    ====================================================== */
+
+    .barra-busca-cruzeiro {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        transform: none;
+        width: calc(100% - 20px);
+        margin: -25px auto 0;
+        display: block;
+        padding: 10px;
+    }
+
+    .botao-buscar {
+        flex: 1 1 100%;
+        width: 100%;
+        height: 48px;
+        margin: 8px 0 0;
+        
+    }
+
+}
+
+
+
+/* =========================================================
+   BOTÃO BUSCAR
+========================================================= */
+
+/* =========================================================
+   BOTÃO BUSCAR
+========================================================= */
+
+.botao-buscar {
+    flex: 0 0 82px;
+    margin-left: 8px;
+    border-radius: 5px;
+    background: #024ff7;
+    color: #faf9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.botao-buscar:hover {
+    background: #9d00ff;
+}
+

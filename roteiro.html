@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Itinerário do Cruzeiro</title>
+
+
+    <!-- ==============================
+         CSS DA PÁGINA
+    =============================== -->
+
+    <link rel="stylesheet" href="roteiro.css">
+
+
+    <!-- ==============================
+         FONTES
+    =============================== -->
+
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+
+    <link
+        href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap)"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==============================
+         ÍCONES - FONT AWESOME
+    =============================== -->
+
+    <link
+        rel="stylesheet"
+        href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css)"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CONTEÚDO DA PÁGINA DE ROTEIRO
+    ====================================================== -->
+
+    <div class="modal-roteiro">
+
+
+        <!-- =================================================
+             CABEÇALHO DO MODAL
+        ================================================== -->
+
+        <div class="cabecalho-roteiro">
+
+            <h1>
+                ITINERÁRIO
+            </h1>
+
+
+            <!-- BOTÃO FECHAR -->
+
+         <a href="buscar.html" class="botao-fechar">×</a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CORPO DO MODAL
+        ================================================== -->
+
+        <div class="corpo-roteiro">
+
+
+            <!-- =============================================
+                 COLUNA ESQUERDA: MAPA E RESUMO
+            ============================================== -->
+
+            <div class="coluna-mapa">
+
+
+                <!-- IMAGEM DO MAPA DO ITINERÁRIO
+
+                     Coloque sua imagem em:
+                     img/mapa-roteiro.jpg
+                -->
+
+                <div class="imagem-mapa">
+
+                    <img
+                        src="img/mapa.JPG"
+                        alt="Mapa do itinerário"
+                    >
+
+                </div>
+
+
+
+                <!-- RESUMO DO ITINERÁRIO -->
+
+                <div class="resumo-roteiro">
+
+                    <p class="resumo-destino">
+
+                        <strong>DE:</strong>
+                        Santos (São Paulo), Brasil
+
+                        <strong>PARA:</strong>
+                        Salvador, Brasil
+
+                    </p>
+
+
+                    <p class="linha-resumo">
+
+                        <i class="fa-solid fa-ship"></i>
+
+                        MSC Virtuosa
+
+                    </p>
+
+
+                    <p class="linha-resumo">
+
+                        <i class="fa-solid fa-anchor"></i>
+
+                        1 Ports of call
+
+                    </p>
+
+
+                    <p class="linha-resumo">
+
+                        <i class="fa-solid fa-water"></i>
+
+                        1 Dias de Navegação
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 COLUNA DIREITA: TABELA DE DIAS
+            ============================================== -->
+
+            <div class="coluna-itinerario">
+
+
+                <!-- CABEÇALHO DA TABELA -->
+
+                <div class="linha-tabela linha-cabecalho">
+
+                    <span class="col-dia">
+                        Dia
+                    </span>
+
+                    <span class="col-data">
+                        Data
+                    </span>
+
+                    <span class="col-porto">
+                        Porto
+                    </span>
+
+                    <span class="col-chegada">
+                        Chegada
+                    </span>
+
+                    <span class="col-saida">
+                        Saída
+                    </span>
+
+                </div>
+
+
+
+                <!-- DIA 1 -->
+
+                <div class="linha-tabela">
+
+                    <span class="col-dia">
+
+                        <span class="numero-dia">
+                            1
+                        </span>
+
+                    </span>
+
+
+                    <span class="col-data">
+
+                        <strong>
+                            05 Dez '26
+                        </strong>
+
+                        <em>
+                            Sab
+                        </em>
+
+                    </span>
+
+
+                    <span class="col-porto">
+
+                        <a href="#">
+                            Santos (São Paulo), Brasil
+                        </a>
+
+                    </span>
+
+
+                    <span class="col-chegada">
+                        -
+                    </span>
+
+
+                    <span class="col-saida">
+                        17:00
+                    </span>
+
+                </div>
+
+
+
+                <!-- DIA 2 -->
+
+                <div class="linha-tabela">
+
+                    <span class="col-dia">
+
+                        <span class="numero-dia">
+                            2
+                        </span>
+
+                    </span>
+
+
+                    <span class="col-data">
+
+                        <strong>
+                            06 Dez '26
+                        </strong>
+
+                        <em>
+                            Dom
+                        </em>
+
+                    </span>
+
+
+                    <span class="col-porto">
+
+                        <a href="#">
+                            Búzios, Brasil
+                        </a>
+
+                    </span>
+
+
+                    <span class="col-chegada">
+                        09:00
+                    </span>
+
+
+                    <span class="col-saida">
+                        19:00
+                    </span>
+
+                </div>
+
+
+                <!-- OBSERVAÇÃO DO DIA 2 -->
+
+                <div class="linha-observacao">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    Desembarque com barcos de transporte (tender boats)
+
+                </div>
+
+
+
+                <!-- DIA 3 -->
+
+                <div class="linha-tabela">
+
+                    <span class="col-dia">
+
+                        <span class="numero-dia">
+                            3
+                        </span>
+
+                    </span>
+
+
+                    <span class="col-data">
+
+                        <strong>
+                            07 Dez '26
+                        </strong>
+
+                        <em>
+                            Seg
+                        </em>
+
+                    </span>
+
+
+                    <span class="col-porto porto-navegacao">
+                        Em navegação
+                    </span>
+
+
+                    <span class="col-chegada">
+                        -
+                    </span>
+
+
+                    <span class="col-saida">
+                        -
+                    </span>
+
+                </div>
+
+
+
+                <!-- DIA 4 -->
+
+                <div class="linha-tabela">
+
+                    <span class="col-dia">
+
+                        <span class="numero-dia">
+                            4
+                        </span>
+
+                    </span>
+
+
+                    <span class="col-data">
+
+                        <strong>
+                            08 Dez '26
+                        </strong>
+
+                        <em>
+                            Ter
+                        </em>
+
+                    </span>
+
+
+                    <span class="col-porto">
+
+                        <a href="#">
+                            Salvador, Brasil
+                        </a>
+
+                    </span>
+
+
+                    <span class="col-chegada">
+                        08:00
+                    </span>
+
+
+                    <span class="col-saida">
+                        -
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,492 @@
+/* =================================================
+   CONFIGURAÇÕES GERAIS
+================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #020b1d;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =================================================
+   BOTÃO X
+================================================= */
+
+/* BOTÃO FECHAR */
+
+.botao-fechar {
+    width: 52px;
+    height: 52px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #2a0077;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 0.2s ease;
+}
+
+.botao-fechar:hover {
+    background: #8d02f8;
+}
+
+
+/* =================================================
+   BANNER
+================================================= */
+
+.banner-artistas {
+
+    min-height: 390px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 6%;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1, 12, 35, 0.98) 0%,
+            rgba(2, 20, 50, 0.85) 40%,
+            rgba(2, 10, 30, 0.30) 100%
+        ),
+        url("img/festa2.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* brilho azul/roxo */
+
+.banner-artistas::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -150px;
+    bottom: -300px;
+
+    background: #8b2cff;
+
+    opacity: 0.18;
+
+    filter: blur(120px);
+
+    border-radius: 50%;
+}
+
+
+/* =================================================
+   TEXTO DO BANNER
+================================================= */
+
+.conteudo-banner-artistas {
+
+    max-width: 680px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.conteudo-banner-artistas h1 {
+
+    font-size: 64px;
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    margin-bottom: 22px;
+}
+
+.conteudo-banner-artistas h1 span {
+
+    background: linear-gradient(
+        90deg,
+        #8b1eff,
+        #a27aff,
+        #cb36ec
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conteudo-banner-artistas p {
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    color: #dbe5f5;
+
+    max-width: 650px;
+}
+
+
+/* =================================================
+   SEÇÃO ARTISTAS
+================================================= */
+
+.secao-artistas {
+
+    padding: 45px 5% 35px;
+}
+
+
+/* título */
+
+.titulo-secao {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 28px;
+}
+
+.titulo-secao h2 {
+
+    font-size: 38px;
+}
+
+.titulo-secao h2 span {
+
+    background: linear-gradient(
+        90deg,
+        #159cff,
+        #8b5cf6,
+        #e83bd5
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.programacao {
+
+    color: #168dff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+.programacao:hover {
+    color: #a855f7;
+}
+
+
+/* =================================================
+   LISTA DE ARTISTAS
+================================================= */
+
+.lista-artistas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* =================================================
+   CARD
+================================================= */
+
+.card-artista {
+
+    background: #071633;
+
+    border: 1px solid #164c91;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card-artista:hover {
+
+    transform: translateY(-7px);
+
+    border-color: #8b5cf6;
+
+    box-shadow:
+        0 12px 35px rgba(73, 60, 255, 0.30);
+}
+
+
+/* imagem */
+
+.imagem-artista {
+
+    width: 100%;
+    height: 250px;
+
+    overflow: hidden;
+}
+
+.imagem-artista img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.card-artista:hover img {
+    transform: scale(1.06);
+}
+
+
+/* informações */
+
+.info-artista {
+
+    padding: 18px;
+}
+
+.info-artista h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 13px;
+}
+
+.data {
+
+    color: #d5dceb;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =================================================
+   CATEGORIAS
+================================================= */
+
+.categoria {
+
+    display: inline-block;
+
+    padding: 6px 18px;
+
+    border-radius: 20px;
+
+    border: 1px solid #d52bff;
+
+    color: #d52bff;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.categoria.rosa {
+    border-color: #ff28b9;
+    color: #ff28b9;
+}
+
+.categoria.azul {
+    border-color: #16a7ff;
+    color: #16a7ff;
+}
+
+
+/* =================================================
+   DESTAQUES
+================================================= */
+
+.destaques {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 30px 6%;
+
+    border-top: 1px solid #12396d;
+}
+
+
+/* item */
+
+.destaque {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex: 1;
+}
+
+.icone {
+
+    font-size: 40px;
+
+    color: #4c8cff;
+
+    text-shadow:
+        0 0 15px rgba(50, 130, 255, 0.5);
+}
+
+.destaque strong {
+
+    font-size: 16px;
+}
+
+.destaque p {
+
+    margin-top: 5px;
+
+    color: #9aa9c4;
+
+    font-size: 13px;
+}
+
+
+/* linhas */
+
+.linha {
+
+    height: 45px;
+
+    width: 1px;
+
+    background: #29466e;
+}
+
+
+/* =================================================
+   BOTÃO VIAGEM
+================================================= */
+
+.botao-viagem {
+
+    white-space: nowrap;
+
+    padding: 16px 28px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #087fff,
+        #7137ed,
+        #d52bff
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 0 25px rgba(72, 82, 255, 0.35);
+
+    transition: 0.3s;
+}
+
+.botao-viagem:hover {
+
+    transform: scale(1.04);
+
+    box-shadow:
+        0 0 35px rgba(155, 50, 255, 0.55);
+}
+
+
+/* =================================================
+   RESPONSIVO
+================================================= */
+
+@media (max-width: 1100px) {
+
+    .lista-artistas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .conteudo-banner-artistas h1 {
+        font-size: 50px;
+    }
+
+    .destaques {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .lista-artistas {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-secao {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .conteudo-banner-artistas h1 {
+        font-size: 40px;
+    }
+
+    .conteudo-banner-artistas p {
+        font-size: 16px;
+    }
+
+    .destaques {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .linha {
+        display: none;
+    }
+}

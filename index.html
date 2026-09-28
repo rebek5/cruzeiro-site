@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Site</title>
+
+    <!-- CSS principal do site -->
+    <link rel="stylesheet" href="index.css">
+
+
+    <!-- ==============================
+         FONTES
+    =============================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==============================
+         ÍCONES - FONT AWESOME
+    =============================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CABEÇALHO DO SITE
+    ====================================================== -->
+
+    <header class="cabecalho">
+
+
+        <!-- =================================================
+             PRIMEIRA LINHA DO CABEÇALHO
+        ================================================== -->
+
+        <div class="cabecalho-superior">
+
+
+            <!-- LOGO -->
+            <div class="logo-site">
+
+                <img
+                    src="img/logo-peixe.png"
+                    alt="Logo do site"
+                >
+
+            </div>
+
+
+            <!-- LOCALIZAÇÃO / CEP -->
+            <div class="localizacao-site">
+
+                <strong>Ativar localização</strong>
+
+                <div class="cep-localizacao">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>CEP</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAMPO DE PESQUISA DO SITE -->
+            <div class="pesquisa-site">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Pesquisar"
+                >
+
+            </div>
+
+
+            <!-- BOTÃO DE LOGIN -->
+            <button class="botao-login">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Login</span>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SEGUNDA LINHA / MENU PRINCIPAL
+        ================================================== -->
+
+        <nav class="menu-principal">
+
+
+            <!-- PASSAGENS -->
+            <a href="#">
+
+                Passagens
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+            <!-- PACOTES -->
+            <a href="#">
+
+                Pacotes
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+            <!-- DESCONTOS -->
+            <a href="#">
+
+                Descontos e parcelamento
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+            <!-- EVENTOS -->
+            <a href="#">
+
+                Eventos
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+            <!-- SOBRE NÓS -->
+            <a href="#">
+
+                Sobre nós
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+
+    <!-- =====================================================
+         BANNER PRINCIPAL COM VÍDEO
+    ====================================================== -->
+
+    <section class="banner-principal">
+
+
+        <!-- VÍDEO DE FUNDO -->
+        <video
+            class="video-banner"
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+
+            <source
+                src="img/video-cruzeiro3.mp4"
+                type="video/mp4"
+            >
+
+        </video>
+
+
+
+        <!-- =================================================
+     TEXTOS SOBRE O VÍDEO
+================================================== -->
+
+<div class="conteudo-banner">
+
+    <div class="badge-show">
+       ⭐  &nbsp; MUSICA &nbsp; • &nbsp; LAZER &nbsp; • &nbsp; ALTO-MAR
+    </div>
+
+    <h1>
+        Viva uma experiência inesquecível
+    </h1>
+
+    <p>
+        Descubra novos destinos a bordo, com conforto e entretenimento de primeira classe.
+    </p>
+
+    <a
+        href="#"
+        class="botao-banner"
+    >
+        Conheça nossos cruzeiros
+    </a>
+
+</div>
+
+
+
+
+        <!-- =================================================
+             BARRA DE PESQUISA DE CRUZEIROS
+        ================================================== -->
+
+        <div class="barra-busca-cruzeiro">
+
+
+            <!-- =============================================
+                 CAMPO: DESTINO DO CRUZEIRO
+            ============================================== -->
+
+            <div class="campo-busca campo-destino">
+
+                <div class="icone-campo">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+                <div class="informacoes-campo">
+
+                    <label>
+                        CRUZEIRO PARA
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione o Destino
+                        </option>
+
+                        <option>
+                            Argentina
+                        </option>
+
+                        <option>
+                            Brasil
+                        </option>
+
+                        <option>
+                            Chile
+                        </option>
+
+                        <option>
+                            Uruguai
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- =============================================
+                 CAMPO: DATA DE EMBARQUE
+            ============================================== -->
+
+            <div class="campo-busca campo-data-embarque">
+
+                <div class="icone-campo">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                </div>
+
+                <div class="informacoes-campo">
+
+                    <label>
+                        DATA DE EMBARQUE
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione a Data
+                        </option>
+
+                        <option>
+                            Outubro 2026
+                        </option>
+
+                        <option>
+                            Dezembro 2026
+                        </option>
+
+                        <option>
+                            Fevereiro 2027
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- =============================================
+                 CAMPO: PORTO DE EMBARQUE
+            ============================================== -->
+
+            <div class="campo-busca campo-porto-embarque">
+
+                <div class="icone-campo">
+
+                    <i class="fa-solid fa-location-crosshairs"></i>
+
+                </div>
+
+                <div class="informacoes-campo">
+
+                    <label>
+                        PARTINDO DE
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione o Porto
+                        </option>
+
+                        <option>
+                            Santos
+                        </option>
+
+                        <option>
+                            Rio de Janeiro
+                        </option>
+
+                        <option>
+                            Salvador
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- =============================================
+                 CAMPO: COMPANHIA
+            ============================================== -->
+
+            <div class="campo-busca campo-companhia">
+
+                <div class="icone-campo">
+
+                    <i class="fa-solid fa-ship"></i>
+
+                </div>
+
+                <div class="informacoes-campo">
+
+                    <label>
+                        COMPANHIA
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione a Companhia
+                        </option>
+
+                        <option>
+                            Corazul Cruzeiros
+                        </option>
+
+                        <option>
+                            MSC
+                        </option>
+
+                        <option>
+                            Costa Cruzeiros
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- =============================================
+                 CAMPO: NAVIO
+            ============================================== -->
+
+            <div class="campo-busca campo-navio">
+
+                <div class="icone-campo">
+
+                    <i class="fa-solid fa-sailboat"></i>
+
+                </div>
+
+                <div class="informacoes-campo">
+
+                    <label>
+                        NAVIO
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione o Navio
+                        </option>
+
+                        <option>
+                            Corazul
+                        </option>
+
+                        <option>
+                            Navio 2
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- =============================================
+                 CAMPO: QUANTIDADE DE HÓSPEDES
+            ============================================== -->
+
+            <div class="campo-busca campo-hospedes">
+
+                <div class="icone-campo">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <div class="informacoes-campo">
+
+                    <label>
+                        HÓSPEDES
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Hóspedes
+                        </option>
+
+                        <option>
+                            1 hóspede
+                        </option>
+
+                        <option>
+                            2 hóspedes
+                        </option>
+
+                        <option>
+                            3 hóspedes
+                        </option>
+
+                        <option>
+                            4 hóspedes
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- =============================================
+                 BOTÃO DE BUSCA
+            ============================================== -->
+
+<button
+    class="botao-buscar"
+    type="button"
+    onclick="window.location.href='buscar.html'"
+>
+    Buscar
+</button>
+
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

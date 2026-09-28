@@ -1,0 +1,809 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+/* Remove margens e espaçamentos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Impede que o site crie rolagem horizontal */
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Configurações gerais da página */
+body {
+    width: 100%;
+
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    color: #c8cfde;
+
+    
+
+
+    background: #050505 url("img/background (2).jfif") no-repeat center / cover fixed;
+}
+
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+.cabecalho {
+    width: 100%;
+
+    background: #040404;
+
+    border-bottom: 2px solid #c026ff;
+}
+
+
+/* =========================================================
+   PRIMEIRA LINHA DO CABEÇALHO
+========================================================= */
+
+.cabecalho-superior {
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    gap: 25px;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-site {
+
+    width: 200px;
+
+    margin-left: -40px;
+
+    transform: translateY(10px);
+
+    flex-shrink: 0;
+}
+
+.logo-site img {
+
+    width: 200px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   LOCALIZAÇÃO / CEP
+========================================================= */
+
+.localizacao-site {
+
+    width: 210px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transform: translate(80px, 10px);
+
+    justify-content: center;
+
+    gap: 3px;
+
+    flex-shrink: 0;
+}
+
+
+/* Texto "Ativar localização" */
+
+.localizacao-site strong {
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* Linha do CEP */
+
+.cep-localizacao {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #2864e8;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+/* Ícone de localização */
+
+.cep-localizacao i {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   CAMPO DE PESQUISA
+========================================================= */
+
+.pesquisa-site {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translate(-50%, 10px);
+
+    width: 350px;
+
+    height: 35px;
+
+    border-radius: 6px;
+
+    background: #e4e4e4;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    gap: 25px;
+}
+
+
+/* Ícone da pesquisa */
+
+.pesquisa-site i {
+    color: #130067;
+
+    font-size: 20px;
+}
+
+
+/* Campo onde o usuário escreve */
+
+.pesquisa-site input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    color: #071b49;
+}
+
+
+/* Cor do texto "Pesquisar" */
+
+.pesquisa-site input::placeholder {
+    color: #555555;
+}
+
+
+/* =========================================================
+   BOTÃO LOGIN
+========================================================= */
+
+.botao-login {
+
+    position: absolute;
+
+    right: 130px;
+
+    top: 50%;
+
+    transform: translateY(-20%);
+
+    width: 150px;
+
+    height: 40px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2864e8;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    margin-left: 0;
+}
+
+
+/* Ícone do Login */
+
+.botao-login i {
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   MENU PRINCIPAL
+========================================================= */
+
+.menu-principal {
+
+    position: relative;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 12px 40px 0;
+}
+
+.menu-principal::before {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background: #c026ff;
+}
+
+
+/* Links do menu */
+
+.menu-principal a {
+
+    color: #f5f6f8;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Setinhas do menu */
+
+.menu-principal a i {
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+/* Quando passa o mouse */
+
+.menu-principal a:hover {
+
+    color: #2864e8;
+}
+
+
+/* Faz a seta girar */
+
+.menu-principal a:hover i {
+
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   BARRA DE BUSCA DE CRUZEIROS
+========================================================= */
+
+.barra-busca-cruzeiro {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px;
+
+    background-color: #ffffff;
+
+    border-radius: 7px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   CAMPO DE BUSCA
+========================================================= */
+
+.campo-busca {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 15px;
+
+    border-right: 1px solid #dddddd;
+}
+
+
+/* =========================================================
+   ÍCONE DO CAMPO
+========================================================= */
+
+.icone-campo {
+    margin-right: 10px;
+
+    color: #c026ff;
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DO CAMPO
+========================================================= */
+
+.informacoes-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   NOME DO CAMPO
+========================================================= */
+
+.informacoes-campo label {
+    margin-bottom: 5px;
+
+    color: #47709c;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   OPÇÕES DO CAMPO
+========================================================= */
+
+.informacoes-campo select {
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+
+    color: #333333;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   BOTÃO BUSCAR
+========================================================= */
+
+.botao-buscar-cruzeiro {
+    width: 100px;
+    height: 50px;
+
+    margin-left: 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #2864e8;
+
+    color: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.botao-buscar-cruzeiro:hover {
+    background-color: #1d50c0;
+}
+
+
+/* =========================================================
+   RESULTADOS
+========================================================= */
+
+.resultados {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+}
+
+
+/* TÍTULO DOS RESULTADOS */
+
+.resultados h1 {
+    margin-bottom: 25px;
+
+    color: #f4f5f7;
+
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   CADA CRUZEIRO
+========================================================= */
+
+.cruzeiro {
+    width: 100%;
+    min-height: 240px;
+
+    display: flex;
+
+    margin-bottom: 25px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #c800ff;
+;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   IMAGEM DO CRUZEIRO
+========================================================= */
+
+.imagem-cruzeiro {
+    width: 320px;
+    min-width: 320px;
+
+    height: 240px;
+}
+
+
+/* IMAGEM */
+
+.imagem-cruzeiro img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DO CRUZEIRO
+========================================================= */
+
+.informacoes-cruzeiro {
+    padding: 25px;
+
+    flex: 1;
+}
+
+
+/* =========================================================
+   QUANTIDADE DE NOITES
+========================================================= */
+
+.noites {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    margin-bottom: 10px;
+
+    background-color: #c800ff;
+
+    border-radius: 5px;
+
+    color: #f4f5f6;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   NOME DO DESTINO
+========================================================= */
+
+.informacoes-cruzeiro h2 {
+    margin-bottom: 15px;
+
+    color: #071b49;
+
+    font-size: 27px;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DA VIAGEM
+========================================================= */
+
+.informacoes-cruzeiro p {
+    margin-bottom: 8px;
+
+    color: #333333;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   BOTÃO VER ROTEIRO
+========================================================= */
+
+.botao-roteiro {
+    margin-top: 12px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #edf3fb;
+
+    color: #071b49;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.botao-roteiro {
+    background-color: #012064;  /* cor de fundo */
+    color: #ffffff;             /* cor da fonte */
+    font-family: 'Montserrat', sans-serif;  /* tipo da fonte */
+    font-size: 15px;            /* tamanho */
+    font-weight: 700;           /* negrito: 400 normal, 700 bold */
+}
+
+
+
+/* =========================================================
+   BOTÕES DE AÇÃO DO CRUZEIRO
+   (Ver Roteiro / Atrações / Eventos)
+   Ficam um embaixo do outro, à direita do card.
+========================================================= */
+
+.acoes-cruzeiro {
+    display: flex;
+
+    flex-direction: column;   /* um embaixo do outro */
+
+    align-items: flex-start;
+
+    justify-content: center;  /* alinha o grupo com o meio do card */
+
+    gap: 10px;
+
+    margin-left: auto;        /* empurra o bloco para a direita */
+
+    padding: 25px;
+}
+
+.acoes-cruzeiro .botao-roteiro {
+    width: 150px;             /* mesma largura para os três */
+
+    margin-top: 0;            /* espaçamento vem só do gap */
+}
+
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+footer {
+    width: 100%;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    text-align: center;
+
+    background-color: #071b49;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 800px) {
+
+
+    /* CABEÇALHO */
+
+    .cabecalho-superior {
+        height: auto;
+
+        padding: 15px;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* PESQUISA */
+
+    .pesquisa-site {
+        position: static;
+
+        transform: none;
+
+        width: 100%;
+
+        margin-top: 15px;
+    }
+
+
+    /* MENU */
+
+    .menu-principal {
+        gap: 25px;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+    }
+
+
+    /* BOTÃO BUSCAR */
+
+    .botao-buscar-cruzeiro {
+        width: 100%;
+
+        height: 50px;
+
+        margin: 10px 0 0;
+    }
+
+
+    /* =====================================================
+       CRUZEIROS
+    ====================================================== */
+
+    .cruzeiro {
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+
+    /* IMAGEM */
+
+    .imagem-cruzeiro {
+        width: 100%;
+
+        min-width: 100%;
+
+        height: 220px;
+    }
+
+
+    /* INFORMAÇÕES */
+
+    .informacoes-cruzeiro {
+        padding: 22px;
+    }
+
+
+    /* BOTÕES - ficam um embaixo do outro */
+
+    .acoes-cruzeiro {
+        flex: 1 1 auto;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        gap: 10px;
+
+        padding: 0 22px 22px;
+
+        margin-left: 0;
+
+        
+    }
+
+    .acoes-cruzeiro .botao-roteiro {
+        width: 100%;
+
+        margin-top: 0;
+        
+        
+    }
+
+}
+

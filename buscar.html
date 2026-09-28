@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buscar Cruzeiros</title>
+
+
+    <!-- ==============================
+         CSS DA PÁGINA
+    =============================== -->
+
+    <link rel="stylesheet" href="buscar.css">
+
+
+    <!-- ==============================
+         FONTES
+    =============================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==============================
+         ÍCONES - FONT AWESOME
+    =============================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+    
+
+    <!-- =====================================================
+         CABEÇALHO DO SITE
+    ====================================================== -->
+
+    <header class="cabecalho">
+
+
+        <!-- =================================================
+             PRIMEIRA LINHA DO CABEÇALHO
+        ================================================== -->
+
+        <div class="cabecalho-superior">
+
+
+            <!-- LOGO -->
+
+            <div class="logo-site">
+
+
+    <a href="index.html">
+
+
+        <img
+            src="img/logo-peixe.png"
+            alt="Logo do site"
+        >
+
+
+    </a>
+
+
+</div>
+
+
+            <!-- LOCALIZAÇÃO / CEP -->
+
+            <div class="localizacao-site">
+
+                <strong>
+                    Ativar localização
+                </strong>
+
+                <div class="cep-localizacao">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        CEP
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAMPO DE PESQUISA DO SITE -->
+
+            <div class="pesquisa-site">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Pesquisar"
+                >
+
+            </div>
+
+
+            <!-- BOTÃO DE LOGIN -->
+
+            <button class="botao-login">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>
+                    Login
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             SEGUNDA LINHA / MENU PRINCIPAL
+        ================================================== -->
+
+        <nav class="menu-principal">
+
+
+            <!-- PASSAGENS -->
+
+            <a href="#">
+
+                Passagens
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+            <!-- PACOTES -->
+
+            <a href="#">
+
+                Pacotes
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+            <!-- DESCONTOS -->
+
+            <a href="#">
+
+                Descontos e parcelamento
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+            <!-- EVENTOS -->
+
+            <a href="#">
+
+                Eventos
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+            <!-- PARCERIAS -->
+
+            <a href="#">
+
+                Parcerias
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </a>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+    <!-- =====================================================
+         ÁREA DE BUSCA DE CRUZEIROS
+
+         Esta é a parte que pertence ao buscar.html.
+
+         Aqui o usuário escolhe:
+
+         - Destino
+         - Data de embarque
+         - Porto de embarque
+         - Buscar
+    ====================================================== -->
+
+    <section class="barra-busca-cruzeiro">
+
+
+        <!-- =================================================
+             DESTINO
+        ================================================== -->
+
+        <div class="campo-busca">
+
+
+            <!-- ÍCONE DO DESTINO -->
+
+            <div class="icone-campo">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+
+
+            <!-- INFORMAÇÃO DO DESTINO -->
+
+            <div class="informacoes-campo">
+
+                <label>
+                    DESTINO
+                </label>
+
+
+                <select>
+
+                    <option>
+                        Salvador, Brasil
+                    </option>
+
+                    <option>
+                        Brasil
+                    </option>
+
+                    <option>
+                        Argentina
+                    </option>
+
+                    <option>
+                        Uruguai
+                    </option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             DATA DE EMBARQUE
+        ================================================== -->
+
+        <div class="campo-busca">
+
+
+            <!-- ÍCONE DA DATA -->
+
+            <div class="icone-campo">
+
+                <i class="fa-regular fa-calendar"></i>
+
+            </div>
+
+
+            <!-- INFORMAÇÃO DA DATA -->
+
+            <div class="informacoes-campo">
+
+                <label>
+                    DATA DE EMBARQUE
+                </label>
+
+
+                <select>
+
+                    <option>
+                        01 Out '26 - 30 Nov '26
+                    </option>
+
+                    <option>
+                        Outubro 2026
+                    </option>
+
+                    <option>
+                        Novembro 2026
+                    </option>
+
+                    <option>
+                        Dezembro 2026
+                    </option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PORTO DE EMBARQUE
+        ================================================== -->
+
+        <div class="campo-busca">
+
+
+            <!-- ÍCONE DO PORTO -->
+
+            <div class="icone-campo">
+
+                <i class="fa-solid fa-anchor"></i>
+
+            </div>
+
+
+            <!-- INFORMAÇÃO DO PORTO -->
+
+            <div class="informacoes-campo">
+
+                <label>
+                    PORTO DE EMBARQUE
+                </label>
+
+
+                <select>
+
+                    <option>
+                        Santos (São Paulo)
+                    </option>
+
+                    <option>
+                        Rio de Janeiro
+                    </option>
+
+                    <option>
+                        Salvador
+                    </option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             BOTÃO BUSCAR
+        ================================================== -->
+
+        <button class="botao-buscar-cruzeiro">
+
+            Buscar
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RESULTADOS DA BUSCA
+    ====================================================== -->
+
+    <main class="resultados">
+
+
+        <!-- TÍTULO DOS RESULTADOS -->
+
+        <h1>
+            Cruzeiros encontrados
+        </h1>
+
+
+
+       <!-- =================================================
+     PRIMEIRO CRUZEIRO
+================================================== -->
+
+<div class="cruzeiro">
+
+    <!-- IMAGEM -->
+
+    <div class="imagem-cruzeiro">
+
+        <img
+            src="img/cruzeiro1.jfif"
+            alt="Cruzeiro"
+        >
+
+    </div>
+
+
+    <!-- INFORMAÇÕES -->
+
+    <div class="informacoes-cruzeiro">
+
+        <span class="noites">
+            3 NOITES
+        </span>
+
+
+        <h2>
+            Salvador, Brasil
+        </h2>
+
+
+        <p>
+            <strong>DE:</strong>
+            Santos (São Paulo), Brasil
+        </p>
+
+
+        <p>
+            <strong>VISITANDO:</strong>
+            Buzios, RJ
+        </p>
+
+
+        <p>
+            <strong>NAVIO:</strong>
+            MSC Divina
+        </p>
+
+    </div>
+
+
+    <!-- BOTÕES À DIREITA -->
+
+    <div class="acoes-cruzeiro">
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='roteiro.html'"
+        >
+            Ver Roteiro
+        </button>
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='atracoes.html'"
+        >
+            Atrações
+        </button>
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='eventos.html'"
+        >
+            Eventos
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================================
+     SEGUNDO CRUZEIRO
+================================================== -->
+
+<div class="cruzeiro">
+
+    <!-- IMAGEM -->
+
+    <div class="imagem-cruzeiro">
+
+        <img
+            src="img/cruzeiro2.jfif"
+            alt="Cruzeiro"
+        >
+
+    </div>
+
+
+    <!-- INFORMAÇÕES -->
+
+    <div class="informacoes-cruzeiro">
+
+        <span class="noites">
+            6 NOITES
+        </span>
+
+
+        <h2>
+            Salvador, Bahia
+        </h2>
+
+
+        <p>
+            <strong>IDA E VOLTA:</strong>
+            Santos, São Paulo
+        </p>
+
+
+        <p>
+            <strong>VISITANDO:</strong>
+            Búzios, Rio de Janeiro • Salvador, Bahia
+        </p>
+
+
+        <p>
+            <strong>NAVIO:</strong>
+            MSC Seaview
+        </p>
+
+    </div>
+
+
+    <!-- BOTÕES À DIREITA -->
+
+    <div class="acoes-cruzeiro">
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='roteiro.html'"
+        >
+            Ver Roteiro
+        </button>
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='atracoes.html'"
+        >
+            Atrações
+        </button>
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='eventos.html'"
+        >
+            Eventos
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================================
+     TERCEIRO CRUZEIRO
+================================================== -->
+
+<div class="cruzeiro">
+
+    <!-- IMAGEM -->
+
+    <div class="imagem-cruzeiro">
+
+        <img
+            src="img/cruzeiro3.jfif"
+            alt="Cruzeiro"
+        >
+
+    </div>
+
+
+    <!-- INFORMAÇÕES -->
+
+    <div class="informacoes-cruzeiro">
+
+        <span class="noites">
+            4 NOITES
+        </span>
+
+
+        <h2>
+            Santos, São Paulo
+        </h2>
+
+
+        <p>
+            <strong>IDA:</strong>
+            Salvador, Bahia
+        </p>
+
+
+        <p>
+            <strong>VISITANDO:</strong>
+            Maceió, Alagoas
+        </p>
+
+
+        <p>
+            <strong>NAVIO:</strong>
+            MSC Preziosa
+        </p>
+
+    </div>
+
+
+    <!-- BOTÕES À DIREITA -->
+
+    <div class="acoes-cruzeiro">
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='roteiro.html'"
+        >
+            Ver Roteiro
+        </button>
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='atracoes.html'"
+        >
+            Atrações
+        </button>
+
+        <button
+            class="botao-roteiro"
+            type="button"
+            onclick="window.location.href='eventos.html'"
+        >
+            Eventos
+        </button>
+
+    </div>
+
+</div>
+
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer>
+
+        <p>
+            ©Viaje Mais 
+            CNPJ: 03.709.814/0001-98
+        </p>
+        <p>
+            Fale conosco
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
